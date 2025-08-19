@@ -144,8 +144,7 @@ All frequencies are expressed in Hz (vibrations per second), corresponding to mu
 
 ### Drum Loop
 ```python
-# create timeline
-tl = Timeline(bpm=120, time_signature=(4,4), measures=25, fs=44100)
+tl = Timeline(bpm=120, time_signature=(4,4), measures=25, fs=44100) # creates timeline
 
 # drum loop
 for beat in range(1, tl.time_signature[0] * tl.measures + 1): # runs loop for full timeline
