@@ -64,7 +64,6 @@ acid_bass_harmonics = [
     {'type': 'damped_square', 'interval': 2 ** (12/12), 'mult': 2, 'amp': 0.4, 'decay': 2.5},
     {'type': 'sine', 'interval': 2 ** (3/12), 'mult': 3, 'amp': 0.2}
 ]
-
 # Create the instrument
 acid_bass = Instrument(harmonics=acid_bass_harmonics, duration=8.0)
 
