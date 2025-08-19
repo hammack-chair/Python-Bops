@@ -156,6 +156,8 @@ for beat in range(1, tl.time_signature[0] * tl.measures + 1): # runs loop for fu
     tl.add_note(hihat, root_freq=48.109, start_beat=beat-0.75, end_beat=beat-0.625) # hihat hit 1
     tl.add_note(hihat, root_freq=48.109, start_beat=beat-0.5, end_beat=beat-0.375) # hihat hit 2
     tl.add_note(hihat, root_freq=48.109, start_beat=beat-0.25, end_beat=beat-0.125) # hihat hit 3
+
+tl.play() # plays full timeline
 ```
 
 ### Future Feature: Live Coding
