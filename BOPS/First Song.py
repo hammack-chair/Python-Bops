@@ -462,11 +462,9 @@ for beat in range(1, tl.time_signature[0] * tl.measures + 1):
         tl.add_note(snare3, root_freq=48.109, start_beat=beat-1, end_beat=beat-0.5)
         tl.add_note(snare3, root_freq=48.109, start_beat=beat-1, end_beat=beat-0.5)
         tl.add_note(snare3, root_freq=48.109, start_beat=beat-1, end_beat=beat-0.5)
-    tl.add_note(hihat, root_freq=48.109, start_beat=beat-0.75, end_beat=beat-0.625)
+    #tl.add_note(hihat, root_freq=48.109, start_beat=beat-0.75, end_beat=beat-0.625)
     tl.add_note(hihat, root_freq=48.109, start_beat=beat-0.5, end_beat=beat-0.375)
-    tl.add_note(hihat, root_freq=48.109, start_beat=beat-0.25, end_beat=beat-0.125)
-    tl.add_note(hihat, root_freq=48.109, start_beat=beat-1/3, end_beat=beat)
-    tl.add_note(hihat, root_freq=48.109, start_beat=beat-2/3, end_beat=beat-0.5)
+    #tl.add_note(hihat, root_freq=48.109, start_beat=beat-0.25, end_beat=beat-0.125)
 
 #=======================================================
 # first chord Gm

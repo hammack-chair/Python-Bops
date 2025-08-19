@@ -83,7 +83,7 @@ maj6synth_harmonics = [
 ]
 
 # Create the instrument
-maj6synth = Instrument(harmonics=maj6synth_harmonics, duration=8.0)
+maj6synth = Instrument(harmonics=maj6synth_harmonics, duration=4.0)
 
 # Example usage: play with root 110 Hz (A1)
 fs = 44100
