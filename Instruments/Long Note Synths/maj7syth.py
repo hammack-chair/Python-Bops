@@ -73,7 +73,7 @@ maj7synth = Instrument(harmonics=maj7_harmonics, duration=8.0)
 
 # Example usage: play a major 7th chord with root 55 Hz (A1)
 fs = 44100
-root_freq = 1100  # A1
+root_freq = 432  # A1
 signal, t = maj7synth.synth(root_freq, fs)
 signal /= np.max(np.abs(signal))
 

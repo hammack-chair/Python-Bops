@@ -69,7 +69,17 @@ acid_bass = Instrument(harmonics=acid_bass_harmonics, duration=8.0)
 
 # Example usage: play with root 110 Hz (A1)
 fs = 44100
-root_freq = 110  # A1
+root_freq = 108  # A1
 signal, t = acid_bass.synth(root_freq, fs)
 signal /= np.max(np.abs(signal))
 
+plt.figure(figsize=(10, 4))
+plt.plot(t[:1000], signal[:1000])
+plt.title("chromaticsynth with root 110 Hz (A1)")
+plt.xlabel("Time (s)")
+plt.ylabel("Amplitude")
+plt.grid(True)
+
+sd.play(signal, fs)
+plt.show()
+sd.wait()

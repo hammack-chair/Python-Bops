@@ -67,21 +67,21 @@ chromatic_intervals = [2 ** (0 / 12), 2 ** (1 / 12), 2 ** (2 / 12), 2 ** (3 / 12
 
 # Define the harmonics for each chord tone (relative to the root)
 screech_growl_harmonics = [
-    {'type': 'damped_sawtooth', 'interval': 1, 'mult': 0.5, 'amp': 0.1, 'decay': 0.2},
-    {'type': 'damped_sawtooth', 'interval': 1, 'mult': 1, 'amp': 0.9, 'decay': 0.2},
-    {'type': 'triangle', 'interval': 2 ** (12/12), 'mult': 2, 'amp': 0.09},
-    {'type': 'square', 'interval': 2 ** (7/12), 'mult': 3, 'amp': 0.08},
-    {'type': 'damped_sine', 'interval': 2 ** (5/12), 'mult': 1, 'amp': 0.5, 'decay': 1.0},
-    {'type': 'sine', 'interval': 2 ** (19/12), 'mult': 1, 'amp': 0.2}
+    {'type': 'damped_sawtooth', 'interval': 1, 'mult': 0.5, 'amp': 3.1, 'decay': 2.2},
+    {'type': 'damped_sine', 'interval': 1, 'mult': 1, 'amp': 15.9, 'decay': 2},
+    {'type': 'damped_triangle', 'interval': 2 ** (12/12), 'mult': 2, 'amp': 0.09, 'decay': 1.8},
+    {'type': 'damped_square', 'interval': 2 ** (7/12), 'mult': 3, 'amp': 0.08, 'decay': 1.5},
+    {'type': 'damped_sine', 'interval': 2 ** (5/12), 'mult': 1, 'amp': 0.05, 'decay': 1.0},
+    {'type': 'damped_sine', 'interval': 2 ** (19/12), 'mult': 1, 'amp': 0.02, 'decay': 0.5},
 ]
 
 
 # Create the instrument
-screech_growl = Instrument(harmonics=screech_growl_harmonics, duration=8.0)
+screech_growl = Instrument(harmonics=screech_growl_harmonics, duration=3.0)
 
 # Example usage: play with root 110 Hz (A1)
 fs = 44100
-root_freq = 110  # A1
+root_freq = 432  # A1
 signal, t = screech_growl.synth(root_freq, fs)
 signal /= np.max(np.abs(signal))
 

@@ -67,11 +67,11 @@ sub_growl_harmonics = [
 
 
 # Create the instrument
-sub_growl = Instrument(harmonics=sub_growl_harmonics, duration=8.0)
+sub_growl = Instrument(harmonics=sub_growl_harmonics, duration=2.0)
 
 # Example usage: play with root 110 Hz (A1)
 fs = 44100
-root_freq = 1100  # A1
+root_freq = 110  # A1
 signal, t = sub_growl.synth(root_freq, fs)
 signal /= np.max(np.abs(signal))
 
