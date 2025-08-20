@@ -144,6 +144,7 @@ All frequencies are expressed in Hz (vibrations per second), corresponding to mu
 
 ### Drum Loop
 ```python
+<<<<<<< Updated upstream
 tl = Timeline(bpm=120, time_signature=(4,4), measures=25, fs=44100) # creates timeline
 
 # drum loop
@@ -157,8 +158,26 @@ for beat in range(1, tl.time_signature[0] * tl.measures + 1): # runs loop for fu
     tl.add_note(hihat, root_freq=48.109, start_beat=beat-0.25, end_beat=beat-0.125) # hihat hit 3
 
 tl.play() # plays full timeline
+=======
+# create timeline
+tl = Timeline(bpm=120, time_signature=(4,4), measures=25, fs=44100)
+
+# drum loop
+for beat in range(1, tl.time_signature[0] * tl.measures + 1): # runs loop for full timeline
+    tl.add_note(minorkick, root_freq=48.109, start_beat=beat-1, end_beat=beat)
+    tl.add_note(scikick, root_freq=48.109, start_beat=beat-1, end_beat=beat)
+    if beat % 2 == 0:
+        tl.add_note(snare3, root_freq=48.109, start_beat=beat-1, end_beat=beat-0.5)
+    tl.add_note(hihat, root_freq=48.109, start_beat=beat-0.75, end_beat=beat-0.625)
+    tl.add_note(hihat, root_freq=48.109, start_beat=beat-0.5, end_beat=beat-0.375)
+    tl.add_note(hihat, root_freq=48.109, start_beat=beat-0.25, end_beat=beat-0.125)
+>>>>>>> Stashed changes
 ```
 
 ### Future Feature: Live Coding
 
+<<<<<<< Updated upstream
 A future update will allow for live coding on a continuous timeline loop at a given BPM. In this interface, you’ll be able to add and remove parts (like drum loops and build-ups) on the fly. The song will keep going until you stop the program — perfect for live DJ sets or extended jam sessions with friends :* don't have friends? Create your own backing tracks hehe the world is your toaster!
+=======
+A future update will allow for live coding on a continuous timeline loop at a given BPM. In this interface, you’ll be able to add and remove parts (like drum loops and build-ups) on the fly. The song will keep going until you stop the program — perfect for live DJ sets or extended jam sessions with friends :* don't have friends? Create your own backing tracks hehe the world is your toaster!
+>>>>>>> Stashed changes
