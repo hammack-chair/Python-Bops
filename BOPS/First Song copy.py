@@ -1,4 +1,11 @@
-from DAW_Components import edm_synth_core as esc
+import sys
+import os
+
+# Add the parent directory to Python's module search path
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
+from DAW_Components import Instrument, Timeline
+
 
 
 minorkick_intervals = [
@@ -7,8 +14,8 @@ minorkick_intervals = [
     # ...
 ]
 
-minorkick = esc.Instrument(harmonics=minorkick_intervals, duration=0.5)
-tl = esc.Timeline(bpm=120, measures=4)
+minorkick = Instrument(harmonics=minorkick_intervals, duration=0.5)
+tl = Timeline(bpm=120, measures=4)
 
 for beat in range(1, tl.time_signature[0] * tl.measures + 1):
     tl.add_note(minorkick, root_freq=48.109, start_beat=beat-1, end_beat=beat)
