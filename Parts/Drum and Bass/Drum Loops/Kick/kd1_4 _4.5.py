@@ -202,47 +202,23 @@ minorkick_intervals = [
 minorkick = Instrument(harmonics=minorkick_intervals, duration=0.5)
 
 
-snare3_intervals = [
-    {'type': 'damped_sine', 'ratio': 1.0, 'amp': 0.8, 'decay': 11},
-    {'type': 'damped_sawtooth', 'ratio': 2.0, 'amp': 0.5, 'decay': 13},
-    {'type': 'damped_triangle', 'ratio': 2.5, 'amp': 0.3, 'decay': 13},
-    {'type': 'damped_square', 'ratio': 3.5, 'amp': 0.2, 'decay': 13},
-    {'type': 'white_noise', 'ratio': 1.0, 'amp': 0.6, 'decay': 7},
-    {'type': 'pink_noise', 'ratio': 1.0, 'amp': 0.7, 'decay': 7}
-]
-
-# Create snare instrument
-snare3 = Instrument(harmonics=snare3_intervals, duration=0.5)
-
-hihat_intervals = [
-    {'type': 'white_noise', 'amp': 0.9, 'decay': 15},
-    {'type': 'pink_noise', 'amp': 0.6, 'decay': 12}
-]
-
-# Create hi-hat instrument
-hihat = Instrument(harmonics=hihat_intervals, duration=0.15)
-
-
 tl = Timeline(bpm=170, time_signature=(4,4), measures=2, fs=44100)
 
 for beat in range(0, 4 * tl.beats_per_measure * tl.measures):
 # kick drum loop    
     if beat % 4 == 0:
-        tl.add_note(minorkick, root_freq=54, start_beat=beat, end_beat=beat+0.25)
-        tl.add_note(minorkick, root_freq=54, start_beat=beat+2.5, end_beat=beat+3.0)
-        tl.add_note(minorkick, root_freq=54, start_beat=beat, end_beat=beat+0.25)
-        tl.add_note(minorkick, root_freq=54, start_beat=beat+2.5, end_beat=beat+3.0)
-        tl.add_note(minorkick, root_freq=54, start_beat=beat, end_beat=beat+0.25)
-        tl.add_note(minorkick, root_freq=54, start_beat=beat+2.5, end_beat=beat+3.0)
-        tl.add_note(minorkick, root_freq=54, start_beat=beat, end_beat=beat+0.25)
-        tl.add_note(minorkick, root_freq=54, start_beat=beat+2.5, end_beat=beat+3.0)
-        tl.add_note(minorkick, root_freq=54, start_beat=beat, end_beat=beat+0.25)
-        tl.add_note(minorkick, root_freq=54, start_beat=beat+2.5, end_beat=beat+3.0)
-        tl.add_note(minorkick, root_freq=54, start_beat=beat, end_beat=beat+0.25)
-        tl.add_note(minorkick, root_freq=54, start_beat=beat+2.5, end_beat=beat+3.0)
-        tl.add_note(minorkick, root_freq=54, start_beat=beat, end_beat=beat+0.25)
-        tl.add_note(minorkick, root_freq=54, start_beat=beat+2.5, end_beat=beat+3.0)
-
-        
+        tl.add_note(minorkick, root_freq=54, start_beat=beat, end_beat=beat+0.5)
+        tl.add_note(minorkick, root_freq=54, start_beat=beat+3, end_beat=beat+3.5)
+        tl.add_note(minorkick, root_freq=54, start_beat=beat+3.5, end_beat=beat+4.0)
+        tl.add_note(minorkick, root_freq=54, start_beat=beat, end_beat=beat+0.5)
+        tl.add_note(minorkick, root_freq=54, start_beat=beat+3, end_beat=beat+3.5)
+        tl.add_note(minorkick, root_freq=54, start_beat=beat+3.5, end_beat=beat+4.0)
+        tl.add_note(minorkick, root_freq=54, start_beat=beat, end_beat=beat+0.5)
+        tl.add_note(minorkick, root_freq=54, start_beat=beat+3, end_beat=beat+3.5)
+        tl.add_note(minorkick, root_freq=54, start_beat=beat+3.5, end_beat=beat+4.0)
+        tl.add_note(minorkick, root_freq=54, start_beat=beat, end_beat=beat+0.5)
+        tl.add_note(minorkick, root_freq=54, start_beat=beat+3, end_beat=beat+3.5)
+        tl.add_note(minorkick, root_freq=54, start_beat=beat+3.5, end_beat=beat+4.0)
+         
 
 tl.play()
