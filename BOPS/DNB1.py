@@ -449,7 +449,7 @@ for beat in range(0, 4 * tl.beats_per_measure * tl.measures):
         tl.add_note(hihat, root_freq=0, start_beat=beat + 0.75, end_beat=beat+0.85)
 
 # synth loop
-    if beat % 16 == 0:
+    if beat % 64 == 0:
         tl.add_note(maj6synth, root_freq=72.081, start_beat=beat+2, end_beat=beat+3.5)        
         tl.add_note(acid_bass, root_freq=72.081, start_beat=beat+2, end_beat=beat+3.5)        
         tl.add_note(maj6synth, root_freq=216 /2, start_beat=beat+2, end_beat=beat+3.5)
@@ -484,7 +484,115 @@ for beat in range(0, 4 * tl.beats_per_measure * tl.measures):
 #        tl.add_note(robofap, root_freq=647.269, start_beat=beat+11.5, end_beat=beat+15.5)
         tl.add_note(maj6synth, root_freq=363.267, start_beat=beat+11.5, end_beat=beat+15.5)
 #        tl.add_note(maj6synth, root_freq=647.269, start_beat=beat+11.5, end_beat=beat+15.5)
+#---------------REPEAT OF SYNTH LOOP---------------
+    if beat % 64 == 16:
+            tl.add_note(maj6synth, root_freq=72.081, start_beat=beat+2, end_beat=beat+3.5)        
+            tl.add_note(acid_bass, root_freq=72.081, start_beat=beat+2, end_beat=beat+3.5)        
+            tl.add_note(maj6synth, root_freq=216 /2, start_beat=beat+2, end_beat=beat+3.5)
+            tl.add_note(maj6synth, root_freq=363.267 /2, start_beat=beat+2, end_beat=beat+3.5)
+            tl.add_note(robofap, root_freq=432, start_beat=beat+2, end_beat=beat+3.5)
+            tl.add_note(robofap, root_freq=544.286, start_beat=beat+2, end_beat=beat+3.5)
+            tl.add_note(maj6synth, root_freq=432, start_beat=beat+2, end_beat=beat+3.5)
+            tl.add_note(maj6synth, root_freq=544.286, start_beat=beat+2, end_beat=beat+3.5)
 
+
+            tl.add_note(maj6synth, root_freq=80.909, start_beat=beat+3.5, end_beat=beat+7.5)
+            tl.add_note(acid_bass, root_freq=80.909, start_beat=beat+3.5, end_beat=beat+7.5)
+            tl.add_note(maj6synth, root_freq=161.817/ 2, start_beat=beat+3.5, end_beat=beat+8.0)
+            tl.add_note(maj6synth, root_freq=161.817 * 2 ** (7/12) /2, start_beat=beat+3.5, end_beat=beat+7.5)
+            tl.add_note(robofap, root_freq=407.754, start_beat=beat+3.5, end_beat=beat+7.5)
+            tl.add_note(robofap, root_freq=484.904, start_beat=beat+3.5, end_beat=beat+7.5)
+            tl.add_note(maj6synth, root_freq=407.754, start_beat=beat+3.5, end_beat=beat+7.5)
+            tl.add_note(maj6synth, root_freq=484.904, start_beat=beat+3.5, end_beat=beat+7.5)
+
+            tl.add_note(maj6synth, root_freq=96.217, start_beat=beat+7.5, end_beat=beat+11.5)
+            tl.add_note(acid_bass, root_freq=96.217, start_beat=beat+7.5, end_beat=beat+11.5)
+            tl.add_note(maj6synth, root_freq=96.217 * 2 ** (7/12), start_beat=beat+7.5, end_beat=beat+11.5)
+            tl.add_note(robofap, root_freq=384.868, start_beat=beat+7.5, end_beat=beat+11.5)
+            tl.add_note(robofap, root_freq=576.651, start_beat=beat+7.5, end_beat=beat+11.5)
+            tl.add_note(maj6synth, root_freq=384.868, start_beat=beat+7.5, end_beat=beat+11.5)
+            tl.add_note(maj6synth, root_freq=576.651, start_beat=beat+7.5, end_beat=beat+11.5)
+
+            tl.add_note(maj6synth, root_freq=108, start_beat=beat+11.5, end_beat=beat+15.5)
+            tl.add_note(acid_bass, root_freq=108, start_beat=beat+11.5, end_beat=beat+15.5)
+            tl.add_note(maj6synth, root_freq=108 * 2 ** (4/12), start_beat=beat+11.5, end_beat=beat+15.5)
+            tl.add_note(robofap, root_freq=363.267, start_beat=beat+11.5, end_beat=beat+15.5)
+            tl.add_note(robofap, root_freq=432, start_beat=beat+11.5, end_beat=beat+15.5)
+            tl.add_note(maj6synth, root_freq=363.267, start_beat=beat+11.5, end_beat=beat+15.5)
+            tl.add_note(maj6synth, root_freq=432, start_beat=beat+11.5, end_beat=beat+15.5)
+
+#---------------REPEAT OF SYNTH LOOP---------------
+    if beat % 64 == 32:
+        tl.add_note(maj6synth, root_freq=72.081, start_beat=beat+2, end_beat=beat+3.5)        
+        tl.add_note(acid_bass, root_freq=72.081, start_beat=beat+2, end_beat=beat+3.5)        
+        tl.add_note(maj6synth, root_freq=216 /2, start_beat=beat+2, end_beat=beat+3.5)
+        tl.add_note(maj6synth, root_freq=363.267 /2, start_beat=beat+2, end_beat=beat+3.5)
+        tl.add_note(robofap, root_freq=432, start_beat=beat+2, end_beat=beat+3.5)
+        tl.add_note(robofap, root_freq=544.286, start_beat=beat+2, end_beat=beat+3.5)
+        tl.add_note(maj6synth, root_freq=432, start_beat=beat+2, end_beat=beat+3.5)
+        tl.add_note(maj6synth, root_freq=544.286, start_beat=beat+2, end_beat=beat+3.5)
+        
+
+        tl.add_note(maj6synth, root_freq=80.909, start_beat=beat+3.5, end_beat=beat+7.5)
+        tl.add_note(acid_bass, root_freq=80.909, start_beat=beat+3.5, end_beat=beat+7.5)
+        tl.add_note(maj6synth, root_freq=161.817/ 2, start_beat=beat+3.5, end_beat=beat+8.0)
+        tl.add_note(maj6synth, root_freq=161.817 * 2 ** (7/12) /2, start_beat=beat+3.5, end_beat=beat+7.5)
+        tl.add_note(robofap, root_freq=407.754, start_beat=beat+3.5, end_beat=beat+7.5)
+        tl.add_note(robofap, root_freq=484.904, start_beat=beat+3.5, end_beat=beat+7.5)
+        tl.add_note(maj6synth, root_freq=407.754, start_beat=beat+3.5, end_beat=beat+7.5)
+        tl.add_note(maj6synth, root_freq=484.904, start_beat=beat+3.5, end_beat=beat+7.5)
+
+        tl.add_note(maj6synth, root_freq=96.217, start_beat=beat+7.5, end_beat=beat+11.5)
+        tl.add_note(acid_bass, root_freq=96.217, start_beat=beat+7.5, end_beat=beat+11.5)
+        tl.add_note(maj6synth, root_freq=96.217 * 2 ** (7/12), start_beat=beat+7.5, end_beat=beat+11.5)
+        tl.add_note(robofap, root_freq=384.868, start_beat=beat+7.5, end_beat=beat+11.5)
+        tl.add_note(robofap, root_freq=647.269, start_beat=beat+7.5, end_beat=beat+11.5)
+        tl.add_note(maj6synth, root_freq=384.868, start_beat=beat+7.5, end_beat=beat+11.5)
+        tl.add_note(maj6synth, root_freq=647.269, start_beat=beat+7.5, end_beat=beat+11.5)
+
+        tl.add_note(maj6synth, root_freq=108, start_beat=beat+11.5, end_beat=beat+15.5)
+        tl.add_note(acid_bass, root_freq=108, start_beat=beat+11.5, end_beat=beat+15.5)
+        tl.add_note(maj6synth, root_freq=108 * 2 ** (4/12), start_beat=beat+11.5, end_beat=beat+15.5)
+        tl.add_note(robofap, root_freq=363.267, start_beat=beat+11.5, end_beat=beat+15.5)
+#        tl.add_note(robofap, root_freq=647.269, start_beat=beat+11.5, end_beat=beat+15.5)
+        tl.add_note(maj6synth, root_freq=363.267, start_beat=beat+11.5, end_beat=beat+15.5)
+#        tl.add_note(maj6synth, root_freq=647.269, start_beat=beat+11.5, end_beat=beat+15.5)
+#---------------REPEAT OF SYNTH LOOP---------------
+    if beat % 64 == 48:
+            tl.add_note(maj6synth, root_freq=72.081, start_beat=beat+2, end_beat=beat+3.5)        
+            tl.add_note(acid_bass, root_freq=72.081, start_beat=beat+2, end_beat=beat+3.5)        
+            tl.add_note(maj6synth, root_freq=216 /2, start_beat=beat+2, end_beat=beat+3.5)
+            tl.add_note(maj6synth, root_freq=363.267 /2, start_beat=beat+2, end_beat=beat+3.5)
+            tl.add_note(robofap, root_freq=432, start_beat=beat+2, end_beat=beat+3.5)
+            tl.add_note(robofap, root_freq=544.286, start_beat=beat+2, end_beat=beat+3.5)
+            tl.add_note(maj6synth, root_freq=432, start_beat=beat+2, end_beat=beat+3.5)
+            tl.add_note(maj6synth, root_freq=544.286, start_beat=beat+2, end_beat=beat+3.5)
+
+
+            tl.add_note(maj6synth, root_freq=80.909, start_beat=beat+3.5, end_beat=beat+7.5)
+            tl.add_note(acid_bass, root_freq=80.909, start_beat=beat+3.5, end_beat=beat+7.5)
+            tl.add_note(maj6synth, root_freq=161.817/ 2, start_beat=beat+3.5, end_beat=beat+8.0)
+            tl.add_note(maj6synth, root_freq=161.817 * 2 ** (7/12) /2, start_beat=beat+3.5, end_beat=beat+7.5)
+            tl.add_note(robofap, root_freq=407.754, start_beat=beat+3.5, end_beat=beat+7.5)
+            tl.add_note(robofap, root_freq=484.904, start_beat=beat+3.5, end_beat=beat+7.5)
+            tl.add_note(maj6synth, root_freq=407.754, start_beat=beat+3.5, end_beat=beat+7.5)
+            tl.add_note(maj6synth, root_freq=484.904, start_beat=beat+3.5, end_beat=beat+7.5)
+
+            tl.add_note(maj6synth, root_freq=96.217, start_beat=beat+7.5, end_beat=beat+11.5)
+            tl.add_note(acid_bass, root_freq=96.217, start_beat=beat+7.5, end_beat=beat+11.5)
+            tl.add_note(maj6synth, root_freq=96.217 * 2 ** (7/12), start_beat=beat+7.5, end_beat=beat+11.5)
+            tl.add_note(robofap, root_freq=384.868, start_beat=beat+7.5, end_beat=beat+11.5)
+            tl.add_note(robofap, root_freq=576.651, start_beat=beat+7.5, end_beat=beat+11.5)
+            tl.add_note(maj6synth, root_freq=384.868, start_beat=beat+7.5, end_beat=beat+11.5)
+            tl.add_note(maj6synth, root_freq=576.651, start_beat=beat+7.5, end_beat=beat+11.5)
+
+            tl.add_note(maj6synth, root_freq=108, start_beat=beat+11.5, end_beat=beat+15.5)
+            tl.add_note(acid_bass, root_freq=108, start_beat=beat+11.5, end_beat=beat+15.5)
+            tl.add_note(maj6synth, root_freq=108 * 2 ** (4/12), start_beat=beat+11.5, end_beat=beat+15.5)
+            tl.add_note(robofap, root_freq=363.267, start_beat=beat+11.5, end_beat=beat+15.5)
+            tl.add_note(robofap, root_freq=432, start_beat=beat+11.5, end_beat=beat+15.5)
+            tl.add_note(maj6synth, root_freq=363.267, start_beat=beat+11.5, end_beat=beat+15.5)
+            tl.add_note(maj6synth, root_freq=864, start_beat=beat+11.5, end_beat=beat+15.5)
 
 
 
