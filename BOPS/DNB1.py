@@ -481,9 +481,9 @@ for beat in range(0, 4 * tl.beats_per_measure * tl.measures):
         tl.add_note(acid_bass, root_freq=108, start_beat=beat+11.5, end_beat=beat+15.5)
         tl.add_note(maj6synth, root_freq=108 * 2 ** (4/12), start_beat=beat+11.5, end_beat=beat+15.5)
         tl.add_note(robofap, root_freq=363.267, start_beat=beat+11.5, end_beat=beat+15.5)
-        tl.add_note(robofap, root_freq=647.269, start_beat=beat+11.5, end_beat=beat+15.5)
+#        tl.add_note(robofap, root_freq=647.269, start_beat=beat+11.5, end_beat=beat+15.5)
         tl.add_note(maj6synth, root_freq=363.267, start_beat=beat+11.5, end_beat=beat+15.5)
-        tl.add_note(maj6synth, root_freq=647.269, start_beat=beat+11.5, end_beat=beat+15.5)
+#        tl.add_note(maj6synth, root_freq=647.269, start_beat=beat+11.5, end_beat=beat+15.5)
 
 
 
